@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jason Loh — Rawang Property Consultant. Explore landed homes, compare projects and check your estimated buying power.">
+  <title>Jason Loh | Rawang Property Consultant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a class="brand" href="#home">JASON <span>LOH</span></a>
+    <nav class="desktop-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#compare">Compare</a>
+      <a href="#loan">Loan Check</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-whatsapp" data-wa-link href="#">WhatsApp Jason</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#compare">Compare</a>
+    <a href="#loan">Loan Check</a><a href="#contact">Contact</a>
+    <a class="mobile-wa" data-wa-link href="#">WhatsApp Jason</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow light">RAWANG PROPERTY CONSULTANT</div>
+      <h1>Find the home.<br><em>Understand the numbers.</em></h1>
+      <p>Professional guidance for buyers exploring landed homes around Rawang — from project selection and area analysis to home-loan planning.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#projects">Explore Properties</a>
+        <a class="btn btn-outline-light" data-wa-link href="#">Talk to Jason →</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>8+</b><span>Years Experience</span></div>
+        <div><b>300+</b><span>Homebuyers Assisted</span></div>
+        <div><b>RM500K–1M+</b><span>Landed Property Focus</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">ABOUT JASON</div>
+      <h2>Buying property can be easier when the complicated parts are explained simply.</h2>
+    </div>
+    <div class="body-copy">
+      <p>I'm <strong>Jason Loh</strong>, a property consultant focused on Rawang landed homes and first-time homebuyers.</p>
+      <p>I help buyers screen their affordability, compare projects and understand the important numbers before they spend time viewing homes that may not fit their situation.</p>
+      <p class="quote-line">“Know your numbers. Know your options. Then make your decision.”</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="projects">
+  <div class="container">
+    <div class="section-top">
+      <div>
+        <div class="eyebrow muted">PROPERTY PORTFOLIO</div>
+        <h2>Projects around<br><em>Rawang & beyond.</em></h2>
+      </div>
+      <p class="section-note">Project facts such as pricing, built-up and tenure are intentionally left editable until the latest official information is confirmed.</p>
+    </div>
+    <div class="project-grid" id="projectGrid"></div><div class="project-modal" id="projectModal" aria-hidden="true"><div class="modal-panel"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  </div>
+</section>
+
+<section class="section compare-section" id="compare">
+  <div class="container">
+    <div class="section-top">
+      <div>
+        <div class="eyebrow">PROJECT COMPARISON</div>
+        <h2>Shortlist before<br><em>you site-visit.</em></h2>
+      </div>
+      <button class="btn btn-dark" id="compareBtn">Compare Selected</button>
+    </div>
+    <div class="selected-hint" id="selectedHint">Select up to 3 projects from the portfolio.</div>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead id="compareHead"></thead>
+        <tbody id="compareBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="rawang">
+  <div class="container split rawang-block">
+    <div>
+      <div class="eyebrow">WHY RAWANG</div>
+      <h2>A place to live, grow and plan your next chapter.</h2>
+      <p class="body-copy">Rawang has a wide range of established neighbourhoods and newer masterplanned communities. The right choice depends on your budget, daily route, preferred home type and priorities.</p>
+    </div>
+    <div class="number-list">
+      <div><span>01</span><div><b>Landed Choices</b><p>Different house types and price points across the wider Rawang market.</p></div></div>
+      <div><span>02</span><div><b>Masterplanned Communities</b><p>Selected townships combine homes, amenities and commercial components.</p></div></div>
+      <div><span>03</span><div><b>Location Matching</b><p>Compare your work route, family needs and lifestyle before choosing a project.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section beige" id="loan">
+  <div class="container split loan-layout">
+    <div>
+      <div class="eyebrow">BUYING POWER CHECK</div>
+      <h2>Before you fall in love with a house, check the numbers.</h2>
+      <p class="body-copy">Use this as a quick planning estimate. It is not a bank approval or a guarantee of financing.</p>
+    </div>
+    <div class="calculator">
+      <div class="field"><label>Monthly Income (RM)</label><input id="income" type="number" placeholder="12000"></div>
+      <div class="field"><label>Existing Monthly Commitments (RM)</label><input id="commitment" type="number" placeholder="2500"></div>
+      <div class="field-row">
+        <div class="field"><label>Interest Rate (%)</label><input id="rate" type="number" value="4.2" step="0.1"></div>
+        <div class="field"><label>Tenure (Years)</label><input id="tenure" type="number" value="35"></div>
+      </div>
+      <button class="btn btn-light full" id="calculateBtn">Calculate Buying Power</button>
+      <div class="result"><small>ESTIMATED PROPERTY PRICE</small><strong id="loanResult">RM0</strong><p id="loanNote">Planning estimate only.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonial">
+  <div class="container testimonial-inner">
+    <div class="eyebrow muted">THE JASON LOH APPROACH</div>
+    <blockquote>“Don't just ask whether you like the house. Ask whether the numbers, location and long-term plan make sense for you.”</blockquote>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">LET'S TALK PROPERTY</div>
+      <h2>Tell me what you're looking for.</h2>
+      <p class="body-copy">Share your preferred area, budget and what you need from the home. The form will prepare a WhatsApp message for you.</p>
+      <div class="contact-facts">
+        <span>RAWANG · SELANGOR</span>
+        <span>LANDED PROPERTY</span>
+        <span>FIRST-TIME BUYER GUIDANCE</span>
+      </div>
+    </div>
+    <form class="lead-form" id="leadForm">
+      <input id="leadName" required placeholder="Your name">
+      <input id="leadPhone" required placeholder="WhatsApp number">
+      <select id="leadBudget">
+        <option value="">Approximate budget</option>
+        <option>RM500K – RM600K</option><option>RM600K – RM750K</option>
+        <option>RM750K – RM1M</option><option>RM1M+</option>
+      </select>
+      <textarea id="leadMessage" placeholder="What are you looking for?"></textarea>
+      <button class="btn btn-dark full" type="submit">Send to Jason →</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>JASON LOH</strong><span> · RAWANG PROPERTY CONSULTANT</span></div>
+    <small>© 2026 Jason Loh. Property information should be verified with the relevant developer / official source.</small>
+  </div>
+</footer>
+
+<a class="floating-wa" data-wa-link href="#" aria-label="WhatsApp Jason">WA</a>
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
