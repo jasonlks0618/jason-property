@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open WhatsApp — Jason Loh</title>
+<meta http-equiv="refresh" content="2;url=https://web.whatsapp.com/send?phone=60126465104&text=Hi%20Jason%2C%20I%20would%20like%20help%20finding%20a%20Rawang%20property.">
+<style>
+body{font-family:Arial,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#f5f1ea;color:#151515;text-align:center}
+main{max-width:420px;padding:32px}a{display:inline-block;margin-top:20px;padding:14px 22px;background:#151515;color:#fff;text-decoration:none;border-radius:999px}
+</style>
+</head>
+<body>
+<main>
+<h1>Opening WhatsApp…</h1>
+<p>If WhatsApp does not open automatically, choose an option below.</p>
+<p><a href="whatsapp://send?phone=60126465104&text=Hi%20Jason%2C%20I%20would%20like%20help%20finding%20a%20Rawang%20property.">Open WhatsApp App</a></p>
+<p><a href="https://web.whatsapp.com/send?phone=60126465104&text=Hi%20Jason%2C%20I%20would%20like%20help%20finding%20a%20Rawang%20property.">Open WhatsApp Web</a></p>
+</main>
+<script>
+(function(){
+  const app='whatsapp://send?phone=60126465104&text=Hi%20Jason%2C%20I%20would%20like%20help%20finding%20a%20Rawang%20property.';
+  const web='https://web.whatsapp.com/send?phone=60126465104&text=Hi%20Jason%2C%20I%20would%20like%20help%20finding%20a%20Rawang%20property.';
+  let hidden=false;
+  document.addEventListener('visibilitychange',()=>{if(document.hidden) hidden=true;});
+  window.location.href=app;
+  setTimeout(()=>{if(!hidden) window.location.href=web;},1200);
+})();
+</script>
+</body>
+</html>
