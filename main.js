@@ -1,6 +1,6 @@
 
 // ===== CHANGE THIS NUMBER BEFORE PUBLISHING =====
-const WHATSAPP_NUMBER = "601XXXXXXXXX";
+const WHATSAPP_NUMBER = "60126465104";
 
 const waMessage = "Hi Jason, I would like to know more about Rawang property.";
 document.querySelectorAll("[data-wa-link]").forEach(a=>{
